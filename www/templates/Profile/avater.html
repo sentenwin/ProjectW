@@ -1,0 +1,17 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title">Avatar Settings</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeAvatar()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form>
+            <div class="media-container">
+                <img ng-src="img/avatar.png" width="100%" />
+            </div>
+            <button class="button button-block button-positive" ng-click="getImage('CAMERA')">Take Picture</button>
+            <button class="button button-block button-positive" ng-click="getImage('PHOTOLIBRARY')">Get from Gallery</button>
+        </form>
+    </ion-content>
+</ion-modal-view>

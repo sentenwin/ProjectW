@@ -1,0 +1,73 @@
+<ion-view title="WaSu" hide-back-button="true">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header ">
+       <ion-list>
+          <ion-item>
+           <div class="card">
+            <div class="item item-divider">
+              Water Status in Tank 
+            </div>
+              <label class="item item-input">
+                <span class="input-label">Overhead Tank </span>
+              </label>
+             <div class="item range range-positive">
+                <i class="icon ion-battery-empty"></i>
+                <input type="range" name="volume" min="0" max="100" value="56" ng-disabled="true">
+                <i class="icon ion-battery-full"></i>
+            </div>             
+              <label class="item item-input">
+                <span class="input-label">Sump </span>
+              </label> 
+              <div class="item range range-positive">
+                <i class="icon ion-battery-empty"></i>
+                <input type="range" name="volume" min="0" max="100" value="33" ng-disabled="true">
+                <i class="icon ion-battery-full"></i>
+            </div>                           
+          </div>
+          </ion-item>
+
+          <ion-item>
+           <div class="card">
+              <div class="item item-divider">
+                Water Tank Property
+              </div>
+
+                <div class="item item-text-wrap">
+                  <div class="row">
+                    <div class="col">
+                    <span class="input-label">Capacity </span>
+                    </div>
+                    <div class="col">
+                      <input type="text" placeholder="10,000 Ltr">
+                    </div>
+                  </div>
+                   <div class="row">
+                    <div class="col">
+                    <span class="input-label">TankType  </span>
+                    </div>
+                    <div class="col">
+                      <input type="text" placeholder="Overhead">
+                    </div>
+                  </div>  
+                  <div class="row">
+                    <div class="col">
+                    <span class="input-label">SensorID </span>
+                    </div>
+                    <div class="col">
+                      <input type="text" placeholder="WS6741">
+                    </div>
+                  </div>
+
+                </div>
+
+        
+            </div>          
+          </ion-item>
+       </ion-list>          
+
+
+     
+  </ion-content>
+</ion-view>

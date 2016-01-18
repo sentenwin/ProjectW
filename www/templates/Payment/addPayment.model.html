@@ -1,0 +1,29 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title">Add Payment</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closePayment()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form>
+            <div class="list">
+              <label class="item item-input item-select">
+                <div class="input-label">
+                  Payment Provider
+                </div>
+                <select>
+                  <option selected>Cash</option>
+                  <option >Vodofone pasa</option>
+                  <option>MoneyBytes</option>
+                </select>
+              </label>
+            </div>
+            <div class="row">
+                <label class="item">
+                      <button class="button button-block button-positive" type="submit" >Add</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>

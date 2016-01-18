@@ -1,0 +1,35 @@
+<ion-view title="Settings" hide-back-button="false">
+    <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+    <h2> Notification Method</h2> 
+    <ion-list>
+      <p> {{notification.method}} <p>
+    </ion-list>  
+      <ion-list>
+          <ion-item>
+           <div class="card">
+            <div class="item item-divider">
+              Configure Water Level Notification
+            </div>
+              <label class="item item-input">
+                <span class="input-label">Overhead Tank </span>
+              </label>
+             <div class="item range range-positive">
+                <i class="icon ion-battery-empty"></i>
+                <input type="range" name="volume" min="0" max="100" value="56">
+                <i class="icon ion-battery-full"></i>
+            </div>             
+              <label class="item item-input">
+                <span class="input-label">Sump </span>
+              </label> 
+              <div class="item range range-positive">
+                <i class="icon ion-battery-empty"></i>
+                <input type="range" name="volume" min="0" max="100" value="33" >
+                <i class="icon ion-battery-full"></i>
+            </div>                           
+          </div>
+          </ion-item>       
+  </ion-content>
+</ion-view>

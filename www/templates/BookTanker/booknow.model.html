@@ -1,0 +1,49 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Booking Now</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeBookNow()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+ <form role="form" name="regForm" ng-submit="bookNow()">
+            <div class="card">
+              <div class="item item-divider">
+                {{BookTank.name}}
+              </div>
+
+                <div class="item item-text-wrap">
+                  <div class="row">
+                    <div class="col">
+                    <span class="input-label">Rate Card </span>
+                    </div>
+                    <div class="col">
+                      <input ng-model="BookTank.rate" type="text" placeholder="Rs 700/10K Ltr">
+                    </div>
+                  </div>
+                   <div class="row">
+                    <div class="col">
+                    <span class="input-label">Mobile </span>
+                    </div>
+                    <div class="col">
+                      <input ng-model="BookTank.phone" type="tel" placeholder="8800909076">
+                    </div>
+                  </div>  
+                  <div class="row">
+                    <div class="col">
+                    <span class="input-label">Estimate Time </span>
+                    </div>
+                    <div class="col">
+                      <input ng-model="BookTank.time" type="text" placeholder="1 Hour">
+                    </div>
+                  </div>
+                  <div class="row">
+                          <label class="item">
+                      <button class="button button-block button-positive" type="submit" >Book Tanker</button>
+                    </label>
+                  </div>
+                </div>      
+            </div>                               
+      </form>
+    </ion-content>
+</ion-modal-view>

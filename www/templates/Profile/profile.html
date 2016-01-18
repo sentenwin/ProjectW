@@ -1,0 +1,39 @@
+<ion-view title="Profile" hide-back-button="false">
+    <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" ng-if ="!enableEdit" ng-click="edit()" class="button button-icon icon ion-edit"></button>
+        <button menu-toggle="right" ng-if ="enableEdit" ng-click="save()" class="button button-icon icon ion-android-done"></button>        
+    </ion-nav-buttons>  
+    
+  <ion-content class="has-header padding">
+         <div class="hero" style="background-image: url('img/profile-bg.jpg');" ng-click="showAvatar()">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/avatar.png');"></div>
+                <h3><a class="light">{{loggedUser.name}}</a></h3>
+            </div>
+        </div>
+
+    <div class="list card">
+
+        <ion-item class="profile-item">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Name</span>
+                    <input type="text" ng-model="loggedUser.name" placeholder="Name">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Phone</span>
+                    <input type="text" ng-model="loggedUser.mobile" placeholder="phone">
+                </label>  
+                 <label class="item item-input item-floating-label">
+                    <span class="input-label">Email</span>
+                    <input type="text" ng-model="loggedUser.email" placeholder="User Name">
+                </label>                             
+         </ion-item>       
+                     
+      </div>          
+      
+  </ion-content>
+</ion-view>
